@@ -1,0 +1,26 @@
+services:
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    container_name: awareness-mailhog
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8025:8025"
+      - "127.0.0.1:1025:1025"
+    networks:
+      - labnet
+
+  gophish:
+    image: gophish/gophish:0.12.1
+    container_name: awareness-gophish
+    restart: unless-stopped
+    depends_on:
+      - mailhog
+    ports:
+      - "127.0.0.1:3333:3333"
+      - "127.0.0.1:8080:80"
+    networks:
+      - labnet
+
+networks:
+  labnet:
+    internal: true

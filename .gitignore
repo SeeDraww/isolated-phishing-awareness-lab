@@ -1,0 +1,21 @@
+# Secrets and local state
+.env
+*.key
+*.pem
+*.crt
+*.db
+*.sqlite
+
+# GoPhish runtime and downloaded/private data
+gophish/*
+Downloads/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+.vscode/
+
+# Keep only safe, sanitized sample data

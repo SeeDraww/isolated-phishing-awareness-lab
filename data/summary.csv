@@ -1,0 +1,4 @@
+scenario,emails_sent,opens,clicks,submissions,open_rate,click_rate,submission_rate
+Scenario A - Template,1,0,0,0,0.0,0.0,0.0
+Scenario B - Benefits,1,0,0,0,0.0,0.0,0.0
+Scenario C - Acknowledgment,1,1,1,1,100.0,100.0,100.0

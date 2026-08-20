@@ -1,0 +1,2 @@
+id,status,ip,latitude,longitude,send_date,reported,modified_date,email,first_name,last_name,position
+9HQ6lGJ,Clicked Link,172.18.0.1,0,0,2026-08-20T10:17:55.171483252Z,false,2026-08-20T10:19:41.43664083Z,test-recipient@lab.test,test,user,
